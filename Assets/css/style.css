@@ -24,6 +24,9 @@ header {
     top: 0;
     background-size: cover;
 }
+.header {
+    position: relative;
+}
 header h1 {
     font-weight: bold;
     font-size: 36px;
@@ -84,6 +87,45 @@ header nav ul li a {
 .secondary-border {
     border-color: #39a6b2;
 }
+
+/* Start of Content 
+.large-box {
+    height: 400px;
+    width: 600px;
+}*/
+.work-box {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.work-box img {
+    flex: 1 12%;
+    margin-left: 400px;
+    height: 400px;
+    width: 600px;
+}
+.work-box h2, .work-box h3 {
+    display: flex;
+    flex-direction: column
+}
+
+/* workin' on it... 
+.cards1 {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.cards1 img {
+    flex: 1 12%;
+    margin-left: 400px;
+    height: 400px;
+    width: 600px;
+}
+/*
 .cards1, .cards2 {
 width: 100%;
 margin: 0 auto;
@@ -91,6 +133,7 @@ display: flex;
 flex-wrap: wrap;
 justify-content: space-around;
 }
+*/
 /* Start of Footer Style */
 footer {
     background: var(--primary-color);
