@@ -88,38 +88,68 @@ header nav ul li a {
     border-color: #39a6b2;
 }
 
+
 /* Start of Content 
-.large-box {
-    height: 400px;
-    width: 600px;
-}*/
-.work-box {
-    width: 100%;
-    margin: 0 auto;
+
+/* About Me Text */
+
+.content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-}
-.work-box img {
-    flex: 1 12%;
-    margin-left: 400px;
-    height: 400px;
-    width: 600px;
-}
-.work-box h2, .work-box h3 {
-    display: flex;
-    flex-direction: column
+    justify-content: center;
 }
 
-/* workin' on it... 
-.cards1 {
+.content p {
+    flex: 1 12%;
+    margin: 20px 100px 10px 470px;
+    height: 200px;
     width: 100%;
-    margin: 0 auto;
+}
+
+/* First Image; Surf-Report */
+.surf-report {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
+.surf-report img {
+    flex: 1 12%;
+    opacity: 0.7;
+    margin: 0px 100px 20px 500px;
+    height: 650px;
+    width: 100%;
+    border:5px solid var(--secondary-color);
+}
+
+.surf-report img:hover {
+    opacity: 1;
+    border-radius: 15px;
+    text-shadow: none;
+}
+
+/*.work-box h2, .work-box h3 {
+    display: flex;
+    flex-direction: column
+}*/
+
+
+.cards1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
 .cards1 img {
+    /* flex: 1 12%; 
+    margin-left: 400px; */
+    height: 200px;
+    width: 500px;
+    border: 50px;
+}
+
+/* .cards1 img {
     flex: 1 12%;
     margin-left: 400px;
     height: 400px;
