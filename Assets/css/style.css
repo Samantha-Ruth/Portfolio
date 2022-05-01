@@ -1,41 +1,44 @@
+/* *** NEED TO ADD ACCESSIBILITY CODES!!! ***/
+/* *** MAKE SURE NAVIGATION LINKS TO ITEMS IN PAGE! *** */
+/* AT HEADER, NEED TO PUSH LETTERING WITHIN BORDER TO THE RIGHT AND EXTEND BORDER ALL THE WAY TO THE LEFT */
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/* ***** NEED TO FIX COLORS ****/
 :root {
     --primary-color: #f2ebe5;
     --secondary-color: #647295;
-    --tertiary-color: #9f496e;
-    --quaternary-color:#2b262d;
+    --tertiary-color: #2b262d;
+    --quaternary-color:#9f496e;
 }
 body {
     color: var(--tertiary-color);
     font-family: Arial, Helvetica, sans-serif;
 }
+
 /* Start of Header Style */
 header {
-    padding: 20px 35px;
+    padding: 10px 35px;
     background-color: var(--tertiary-color);
     display: flex;
     justify-content: space-between;
-    /*position: -webkit-sticky;
-    position: sticky;  */
     top: 0;
     background-size: cover;
+    align-items: center;
 }
-.header {
-    position: relative;
-}
+/* NEED TO PUSH LETTERING WITHIN BORDER TO THE RIGHT AND EXTEND BORDER ALL THE WAY TO THE LEFT */
 header h1 {
     font-weight: bold;
-    font-size: 36px;
+    font-size: 3vw;
     margin: 0;
-    text-shadow: 0 0 10px rgba(0,0,0, 0.5);
 }
 header a {
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     text-decoration-line: underline;
 }
 header nav {
@@ -53,14 +56,14 @@ header nav ul li a {
     /* Space between Navigation elements */
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 1.55vw; /* vw is viewpoint width; shoud equal 1.55 % of window's overall width. */
+    font-size: 2vw; /* vw is viewpoint width; shoud equal 1.55 % of window's overall width. */
     text-shadow: 0 0 10px rgba(0,0,0, 0.5) /* shadow is 50% transparent */
 }
 /* End of Header Style */
 
 /* Hero Style Start*/
 .hero {
-    background-image: url("../../Assets/images/Grand_Canyon_Water.jpg");
+    background-image: url("../../Assets/images/paper-in-leaves.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: top;
@@ -76,13 +79,17 @@ header nav ul li a {
 }
 .subtitle {
     position: relative;
-    top: 50px;
-    left: 700px;
+    top: 70px;
+    left: 1400px;
+    width: 300px;
  }
+
 .primary-border {
-    color: var(--primary-color);
+    display: flex;
+    color: var(--tertiary-color);
     background-color: var(--secondary-color);
     padding: 20px 35px;
+
 }
 .secondary-border {
     border-color: #39a6b2;
@@ -91,22 +98,74 @@ header nav ul li a {
 
 /* Start of Content 
 
+
+
+
+
+
 /* About Me Text */
 
-.content {
+.about-me {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+
+}
+.about-me-content {
+    width: 70vw;
+    align-content: center;
+}
+.about-me-content p {
+    flex: 1 12%;
+    margin: 50px 100px 20px 0px;
+    height: 200px;
+}
+
+.about-me-sidebar {
+    display: flex;
+    width: 30vw;
+    margin: 50px 20px 20px 0px;
+    height: 200px;
+    border-right: 5px solid var(--secondary-color);
+    align-content: center;
+}
+
+.section-title {    
+    font-size: 60px;
+    color: var(--tertiary-color);
+    padding-bottom: 20px;
+    text-align: right;
+    margin: 0 20px 35px auto;
+    width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+/* First Image; Surf-Report */
+.work-section {
+    display: flex;
+}
+
+.sidebar {
+    margin: 0px 10px 20px 0px;
+    width: 100%;
+    border-right:5px solid var(--secondary-color);
+}
+
+.work {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
 
-.content p {
-    flex: 1 12%;
-    margin: 20px 100px 10px 470px;
-    height: 200px;
-    width: 100%;
+    
 }
-
-/* First Image; Surf-Report */
 .surf-report {
     display: flex;
     flex-wrap: wrap;
@@ -115,40 +174,56 @@ header nav ul li a {
 .surf-report img {
     flex: 1 12%;
     opacity: 0.7;
-    margin: 0px 100px 20px 500px;
     height: 650px;
     width: 100%;
     border:5px solid var(--secondary-color);
+    margin: 0 0 20px 0;
 }
 
 .surf-report img:hover {
     opacity: 1;
-    border-radius: 15px;
     text-shadow: none;
 }
 
-/*.work-box h2, .work-box h3 {
+.cards {
     display: flex;
-    flex-direction: column
-}*/
-
-
-.cards1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    flex: 2 100%;
+    justify-content: center;
     align-items: center;
-    
-}
+ }
 
-.cards1 img {
+ .cards left-boxes {
+     display: flex;
+     align-items: center;
+     width: auto;
+ }
+
+.cards img {
     /* flex: 1 12%; 
     margin-left: 400px; */
+    opacity: 0.7;
     height: 200px;
     width: 500px;
-    border: 50px;
+    margin-bottom: 20px;
+    border:5px solid var(--secondary-color);
 }
 
+.cards img:hover {
+    opacity: 1;
+    text-shadow: none;
+}
+
+.right-box {
+    margin-left: 20px;
+}
+
+/*flex: 1 12%;
+    opacity: 0.7;
+    margin: 0px 100px 20px 500px;
+    height: 650px;
+    width: 100%;
+    border:5px solid var(--secondary-color);
+*/
 /* .cards1 img {
     flex: 1 12%;
     margin-left: 400px;
