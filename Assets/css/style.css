@@ -130,7 +130,6 @@ header nav ul li a {
     padding-bottom: 20px;
     text-align: right;
     margin: 0 20px 35px auto;
-    width: 50%;
 }
 
 
@@ -157,8 +156,7 @@ header nav ul li a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
-    
+    width: 75vw;
 }
 .surf-report {
     display: flex;
@@ -235,42 +233,51 @@ justify-content: space-around;
 */
 /* Start of Footer Style */
 footer {
-    background: var(--primary-color);
-    width: 100%;
     padding: 40px 35px;
     display: flex;
-    justify-content: space-around;
+    top: 0;
+    align-items: center;
     flex-wrap: wrap;
 }
-footer div {
+/* footer div {
     padding: 20px 35px;
     border: 1px auto auto 0px;
+} */
+
+.info-box {
+    display: flex;
+    width: 65vw;
+    justify-content: space-around;
 }
-footer h1 {
-    color: var(--secondary-color);
-    font-weight: bold;
-    font-size: 36px;
-    margin: 0;
+
+.contact-info {
+    display: flex;
+    width: 65vw;
 }
 footer div ul {
     /* put navigation items horizontally */
     display: flex;
+    width: 100%;
     flex-wrap: wrap;
-    justify-content: space around;
     align-items: center;
     list-style: none;
+    justify-content: space-around;
 }
+
+
 footer div ul li {
-    /* Space between Navigation elements */
+    /* Space between Navigation elements */ 
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw; /* vw is viewpoint width; shoud equal 1.55 % of window's overall width. */
 }
+
 footer p, footer a {
     text-decoration: none;
     color: var(--secondary-color);
     text-decoration-line: underline;
 }
+
 footer ul {
     margin: 7px 0;
 }
