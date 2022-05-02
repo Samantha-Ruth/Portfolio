@@ -109,6 +109,7 @@ header nav ul li a {
 .about-me-content {
     width: 75vw;
     align-content: center;
+    margin-left: 40px;
 }
 .about-me-content p {
     flex: 1 12%;
@@ -116,7 +117,7 @@ header nav ul li a {
     height: 200px;
 }
 
-.about-me-sidebar {
+.sidebar {
     display: flex;
     width: 25vw;
     margin: 50px 20px 20px 0px;
@@ -131,6 +132,9 @@ header nav ul li a {
     text-align: right;
     margin: 0 20px 35px auto;
 }
+/* End of About Me Section */
+
+
 
 
 
@@ -152,22 +156,24 @@ header nav ul li a {
     border-right:5px solid var(--secondary-color);
 }*/
 
+.work-sidebar {
+    height: auto;
+}
 .work {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
     width: 75vw;
+    margin-left: 40px;
 }
 .surf-report {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    margin-top: 50px;
 }
 .surf-report img {
     flex: 1 12%;
     opacity: 0.7;
     height: 650px;
-    width: 100%;
+    width: 65vw;
     border:5px solid var(--secondary-color);
     margin: 0 0 20px 0;
 }
@@ -195,7 +201,7 @@ header nav ul li a {
     margin-left: 400px; */
     opacity: 0.7;
     height: 200px;
-    width: 500px;
+    width: 32vw;
     margin-bottom: 20px;
     border:5px solid var(--secondary-color);
 }
