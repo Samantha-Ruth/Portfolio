@@ -1,7 +1,4 @@
 /* *** NEED TO ADD ACCESSIBILITY CODES!!! ***/
-/* *** MAKE SURE NAVIGATION LINKS TO ITEMS IN PAGE! *** */
-/* AT HEADER, NEED TO PUSH LETTERING WITHIN BORDER TO THE RIGHT AND EXTEND BORDER ALL THE WAY TO THE LEFT */
-
 
 * {
     margin: 0;
@@ -79,9 +76,15 @@ header nav ul li a {
 }
 .subtitle {
     position: relative;
-    top: 70px;
-    left: 1400px;
+    top: 4vw;
+    left: 65vw;
     width: 300px;
+    color: var(--tertiary-color);
+    background-color: var(--secondary-color);
+    padding-top: 10px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    padding-left: 25px; 
  }
 
 .primary-border {
@@ -134,28 +137,10 @@ header nav ul li a {
 }
 /* End of About Me Section */
 
-
-
-
-
-
-
-
-
-
-
-
 /* First Image; Surf-Report */
 .work-section {
     display: flex;
 }
-
-/* .sidebar {
-    margin: 0px 10px 20px 0px;
-    width: 100%;
-    border-right:5px solid var(--secondary-color);
-}*/
-
 .work-sidebar {
     height: auto;
 }
@@ -163,13 +148,15 @@ header nav ul li a {
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
-    width: 75vw;
+    width: 65vw;
     margin-left: 40px;
 }
 .surf-report {
     margin-top: 50px;
 }
-.surf-report img {
+.surf {
+    background-image: url("../../Assets/images/Grand_Canyon_Water.jpg");
+    background-size: cover;
     flex: 1 12%;
     opacity: 0.7;
     height: 650px;
@@ -178,10 +165,36 @@ header nav ul li a {
     margin: 0 0 20px 0;
 }
 
-.surf-report img:hover {
+.surf:hover {
     opacity: 1;
     text-shadow: none;
 }
+
+.content-title {
+    position: relative;
+    opacity: 1;
+    z-index: 999;
+    top: 34vw;
+    width: 18vw;
+    color: var(--tertiary-color);
+    background-color: var(--secondary-color);
+    padding: 5px 25px;
+
+ }
+
+ .content-title h2 {
+    font-size: 2vw;
+    padding-bottom: 5px;
+ }
+
+ .content-title h3 {
+     font-size: 1.3vw;
+ }
+
+ .content-title2 {
+    top: 6.3vw;
+ }
+
 
 .cards {
     display: flex;
@@ -190,11 +203,45 @@ header nav ul li a {
     align-items: center;
  }
 
- .cards left-boxes {
-     display: flex;
-     align-items: center;
-     width: auto;
+ .boxes {
+    display: flex;
+    flex-direction: column;
+    flex: 2 100%;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    width: 32vw;
+    margin-bottom: 20px;
  }
+
+ .box {
+    opacity: 0.7;
+    height: 200px;
+    width: 32vw;
+    margin-bottom: 20px;
+    border:5px solid var(--secondary-color);
+}
+.left-upper {
+    background-image: url("../../Assets/images/LED\ Lights.jpg");
+    background-size: cover; 
+}
+.left-lower {
+    background-image: url("../../Assets/images/Grand\ _Traverse.JPG");
+    background-size: cover; 
+}
+.right-upper {
+    background-image: url("../../Assets/images/mountains.jpg");
+    background-size: cover; 
+}
+.right-lower {
+    background-image: url("../../Assets/images/hero-bg.jpeg");
+    background-size: cover; 
+}
+
+.box:hover {
+    opacity: 1;
+    text-shadow: none;
+}
 
 .cards img {
     /* flex: 1 12%; 
