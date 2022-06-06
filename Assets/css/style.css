@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* ***** NEED TO FIX COLORS ****/
+
 :root {
     --primary-color: #f2ebe5;
     --secondary-color: #a9c5da;
@@ -22,12 +22,12 @@ header {
     padding: 10px 35px;
     background-color: var(--tertiary-color);
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     top: 0;
     background-size: cover;
     align-items: center;
 }
-/* NEED TO PUSH LETTERING WITHIN BORDER TO THE RIGHT AND EXTEND BORDER ALL THE WAY TO THE LEFT */
 header h1 {
     font-weight: bold;
     font-size: 3vw;
@@ -53,8 +53,8 @@ header nav ul li a {
     /* Space between Navigation elements */
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 2vw; /* vw is viewpoint width; shoud equal 1.55 % of window's overall width. */
-    text-shadow: 0 0 10px rgba(0,0,0, 0.5) /* shadow is 50% transparent */
+    font-size: 2vw;
+    text-shadow: 0 0 10px rgba(0,0,0, 0.5)
 }
 /* End of Header Style */
 
@@ -70,29 +70,29 @@ header nav ul li a {
     align-items: flex-start;
     list-style: none;
 }
-.profile-photo {
-    margin: 1vw;
-    margin-left: 2vw;
-    width: 20vw;
-}
-
 .hero div {
     padding: 10px;
     color: var(--quaternary-color);
 }
+.profile-photo {
+    margin: 1vw;
+    margin-left: 2vw;
+    width: 25vw;
+}
+.subtitle-div {
+    display: flex;
+    justify-content: center;
+}
 .subtitle {
-    position: relative;
-    top: 10vw;
-    left: 53vw;
-    /* width: 300px; */
-    color: var(--tertiary-color);
-    background-color: var(--secondary-color);
+    margin-left: 35vw;
+    text-align: center;
+    font-size: 20px;
  }
 .primary-border {
     display: flex;
     color: var(--tertiary-color);
     background-color: var(--secondary-color);
-    padding: 20px 35px;
+    padding: 20px 5vw;
 }
 .secondary-border {
     border-color: #39a6b2;
@@ -115,7 +115,7 @@ header nav ul li a {
 }
 .about-me-content p {
     flex: 1 12%;
-    font-size: 1.7vw;
+    font-size: 20px;
     margin: 50px 30px 20px 0px;
     padding: 20px;
 }
@@ -140,13 +140,6 @@ header nav ul li a {
 .work-section {
     display: flex;
 }
-/* .work {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-    width: 65vw;
-    margin-left: 40px;
-} */
 .surf-report {
     margin-top: 50px;
 }
@@ -160,12 +153,10 @@ header nav ul li a {
     border:5px solid var(--secondary-color);
     margin: 0 0 20px 0;
 }
-
 .surf:hover {
     opacity: 1;
     text-shadow: none;
 }
-
 .content-title {
     position: relative;
     opacity: 1;
@@ -174,31 +165,26 @@ header nav ul li a {
     width: 20vw;
     color: var(--tertiary-color);
     background-color: var(--secondary-color);
-    padding: 5px 25px;
-
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
  }
-
  .content-title h2 {
     font-size: 2vw;
     padding-bottom: 5px;
  }
-
  .content-title h3 {
      font-size: 1.3vw;
  }
-
  .content-title2 {
-    top: 6.3vw;
+    top: 7vw;
  }
-
-
 .cards {
     display: flex;
     flex: 2 100%;
     justify-content: center;
     align-items: center;
  }
-
  .boxes {
     display: flex;
     flex-direction: column;
@@ -208,7 +194,6 @@ header nav ul li a {
     width: 32vw;
     /* margin-bottom: 20px; */
  }
-
  .box {
     opacity: 0.7;
     height: 200px;
@@ -217,27 +202,25 @@ header nav ul li a {
     border:5px solid var(--secondary-color);
 }
 .left-upper {
-    background-image: url("../../Assets/images/country-background.jpg");
+    background-image: url("../../Assets/images/Clouds.jpg");
     background-size: cover; 
 }
 .left-lower {
-    background-image: url("../../Assets/images/Grand\ _Traverse.JPG");
+    background-image: url("../../Assets/images/mountains.jpg");
     background-size: cover; 
 }
 .right-upper {
-    background-image: url("../../Assets/images/mountains.jpg");
+    background-image: url("../../Assets/images/Robots.jpg");
     background-size: cover; 
 }
 .right-lower {
     background-image: url("../../Assets/images/hero-bg.jpeg");
     background-size: cover; 
 }
-
 .box:hover {
     opacity: 1;
     text-shadow: none;
 }
-
 .cards img {
     /* flex: 1 12%; 
     margin-left: 400px; */
@@ -247,57 +230,27 @@ header nav ul li a {
     margin-bottom: 20px;
     border:5px solid var(--secondary-color);
 }
-
 .cards img:hover {
     opacity: 1;
     text-shadow: none;
 }
-
 .right-box {
     margin-left: 20px;
 }
 
-/*flex: 1 12%;
-    opacity: 0.7;
-    margin: 0px 100px 20px 500px;
-    height: 650px;
-    width: 100%;
-    border:5px solid var(--secondary-color);
-*/
-/* .cards1 img {
-    flex: 1 12%;
-    margin-left: 400px;
-    height: 400px;
-    width: 600px;
-}
-/*
-.cards1, .cards2 {
-width: 100%;
-margin: 0 auto;
-display: flex;
-flex-wrap: wrap;
-justify-content: space-around;
-}
-*/
 /* Start of Footer Style */
 #contact {
-    padding: 40px 0px;
+    padding: 1vw 0vw;
     display: flex;
     top: 0;
     align-items: center;
     flex-wrap: wrap;
 }
-/* footer div {
-    padding: 20px 35px;
-    border: 1px auto auto 0px;
-} */
-
 .info-box {
     display: flex;
     width: 75vw;
     justify-content: space-around;
 }
-
 .contact-info {
     display: flex;
     width: 65vw;
@@ -311,21 +264,163 @@ footer div ul {
     list-style: none;
     justify-content: space-around;
 }
-
-
 footer div ul li {
     /* Space between Navigation elements */ 
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 2vw; /* vw is viewpoint width; shoud equal 1.55 % of window's overall width. */
+    font-size: 30px;
 }
-
 footer p, footer a {
     text-decoration: none;
     color: var(--quaternary-color);
     text-decoration-line: underline;
 }
-
 footer ul {
     margin: 7px 0;
+}
+
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 2vw;
+    }
+    .primary-border {
+        padding: 2vw;
+    }
+    .photo {
+        display: flex;
+        justify-content: center;
+    }
+    .subtitle {
+        margin-left: 0;
+        position: relative;
+        font-size: 16px;
+        top: 9vw;
+        left: 20vw;
+        width: 40vw;
+        color: var(--tertiary-color);
+        background-color: var(--secondary-color);
+     }
+    header nav ul li a {
+        font-size: 20px;
+    }
+    .surf {
+        height: 500px;
+    }
+    .content-title2 {
+        top: 12vw;
+    }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    .primary-border {
+        padding: 2vw;
+    }
+    .subtitle {
+        font-size: 16px;
+        top: 8vw;
+        left: 15vw;
+        width: 50vw;
+        padding: 5px;
+     }
+     #about-me {
+        flex-wrap: wrap;
+        justify-content: center;
+     }
+    .sidebar {
+        width: 27%;
+        margin: 0;
+        border-right: none;
+        padding: 2vw 0 0 0;
+        height: 12vw;
+        border-bottom: 5px solid var(--secondary-color);
+        justify-content: center;
+    }
+    .section-title {
+        margin: 0;
+        justify-content: center;
+    }
+    .about-me-content p {
+        margin: 1vw;
+        padding: 2vw 0vw 0vw 0vw;
+    }
+    .work-section {
+        flex-wrap: wrap;
+        justify-content: center;
+     }
+    .surf {
+        height: 400px;
+    }
+    .content-title {
+        width: 25vw;
+    }
+    .content-title h3 {
+        font-size: 14px;
+    }
+    .content-title2 {
+        top: 11vw;
+    }
+     #contact {
+        flex-wrap: wrap;
+        justify-content: center;
+     }
+     .contact-info {
+         width: 95%;
+     }
+     footer p, a {
+        font-size: 20px;
+        padding: 2vw;
+    }
+}
+
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    header {
+        padding-bottom: 2;
+        justify-content: center;
+        position: relative;
+    }
+    header h1 {
+        width: 100%;
+        text-align: center;
+        font-size: 35px;
+    }
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    header nav ul li a {
+        font-size: 20px;
+    }
+    .hero {
+        justify-content: center; 
+    }
+    .profile-photo {
+        margin: 0vw;
+        margin-left: 2vw;
+        width: 59%;
+        justify-content: center;
+    }
+    .subtitle {
+        font-size: 20px;
+        top: 0vw;
+        width: 50vw;
+        left: 0vw;
+     }
+    .section-title {    
+        font-size: 25px;
+        text-align: center;
+        padding-top: 10px;
+    }
+    .content-title {
+        width: 29vw;
+    }
+    .content-title h3 {
+        font-size: 11px;
+        padding: 0;
+    }
 }
