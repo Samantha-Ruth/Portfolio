@@ -153,18 +153,6 @@ header nav ul li a {
     border:5px solid var(--secondary-color);
     margin: 0 0 20px 0;
 }
-/* .main-caption {
-    position: relative;
-    opacity: 1;
-    z-index: 999;
-    top: 27vw;
-    width: 20vw;
-    color: var(--tertiary-color);
-    background-color: var(--secondary-color);
-    padding-left: 10px;
-    display: flex;
-    flex-direction: column;
-} */
 .surf:hover {
     opacity: 1;
     text-shadow: none;
@@ -436,6 +424,9 @@ footer ul {
         text-align: center;
         padding-top: 10px;
     }
+    .main-caption {
+        width: 50vw;
+    }
     .content-title {
         width: 29vw;
     }
@@ -443,4 +434,32 @@ footer ul {
         font-size: 11px;
         padding: 0;
     }
+    .content-title {
+    position: relative;
+    opacity: 1;
+    z-index: 999;
+    top: 27vw;
+    width: 32vw;
+    color: var(--tertiary-color);
+    background-color: var(--secondary-color);
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+ }
+ .main-caption {
+    width: 50vw;
+}
+ .content-title h2 {
+    font-size: 4vw;
+    padding-bottom: 5px;
+ }
+ .content-title h3 {
+    font-size: 2.2vw;
+
+ }
+ .content-title2 {
+    top: 5vw;
+ }
+ 
 }
