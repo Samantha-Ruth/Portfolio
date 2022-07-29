@@ -116,8 +116,8 @@ header nav ul li a {
 .about-me-content p {
     flex: 1 12%;
     font-size: 20px;
-    margin: 50px 30px 20px 0px;
-    padding: 20px;
+    margin: 50px 30px 0px 0px;
+    padding-top: 20px;
 }
 .sidebar {
     display: flex;
@@ -144,7 +144,7 @@ header nav ul li a {
     margin-top: 50px;
 }
 .surf {
-    background-image: url("../../Assets/images/country-background.jpg");
+    background-image: url("../../Assets/images/cells.jpg");
     background-size: cover;
     flex: 1 12%;
     opacity: 0.7;
@@ -153,11 +153,7 @@ header nav ul li a {
     border:5px solid var(--secondary-color);
     margin: 0 0 20px 0;
 }
-.surf:hover {
-    opacity: 1;
-    text-shadow: none;
-}
-.content-title {
+/* .main-caption {
     position: relative;
     opacity: 1;
     z-index: 999;
@@ -168,6 +164,23 @@ header nav ul li a {
     padding-left: 10px;
     display: flex;
     flex-direction: column;
+} */
+.surf:hover {
+    opacity: 1;
+    text-shadow: none;
+}
+.content-title {
+    position: relative;
+    opacity: 1;
+    z-index: 999;
+    top: 27vw;
+    width: 27vw;
+    color: var(--tertiary-color);
+    background-color: var(--secondary-color);
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
  }
  .content-title h2 {
     font-size: 2vw;
@@ -210,7 +223,7 @@ header nav ul li a {
     background-size: cover; 
 }
 .right-upper {
-    background-image: url("../../Assets/images/Robots.jpg");
+    background-image: url("../../Assets/images/country-background.jpg");
     background-size: cover; 
 }
 .right-lower {
@@ -419,7 +432,7 @@ footer ul {
         left: 0vw;
      }
     .section-title {    
-        font-size: 25px;
+        font-size: 18px;
         text-align: center;
         padding-top: 10px;
     }
